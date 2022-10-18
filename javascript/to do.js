@@ -5,7 +5,7 @@ button.addEventListener("click", add);
 
 function getValue() {
   // Sélectionner l'élément input et récupérer sa valeur
-    const val = document.getElementsByClassName('.input').value;
+    const val = document.getElementById('.input').value;
     console.log(val);
 }
 

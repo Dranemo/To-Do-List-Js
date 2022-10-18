@@ -57,6 +57,12 @@ ul li.checked::before {
 }
 
 /* Style the close button */
+#myInput {
+  border-radius: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
 .close {
   position: absolute;
   right: 0;
@@ -71,9 +77,8 @@ ul li.checked::before {
 
 /* Style the header */
 .header {
-  background-color: #f44336;
   padding: 30px 40px;
-  color: white;
+  color: black;
   text-align: center;
 }
 
