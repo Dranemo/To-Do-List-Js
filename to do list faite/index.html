@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/to do list faite/style.css">
+    <title>To Do List</title>
+</head>
+<body>
+  <div class="select">
+    <select name="todos" class="filter-todo">
+      <option value="all">Toutes</option>
+      <option value="completed">Complétée</option>
+      <option value="uncompleted">À Faire</option>
+    </select>
+    
+  <div id="myDIV" class="header">
+    <h2>My To Do List</h2>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+  </div>
+  
+  <ul id="myUL">
+    <li>Hit the gym</li>
+    <li class="checked">Pay bills</li>
+    <li>Meet George</li>
+    <li>Buy eggs</li>
+    <li>Read a book</li>
+    <li>Organize office</li>
+  </ul>
+
+  <table>
+    <tr>
+       <th class="important" >Important</th>
+       <th class="en_cours">En cours</th>
+       <th class="a_faire">A faire</th> 
+    </tr>
+    <tr>
+        <td>
+            <ul class="list">
+                <div class="tododiv">
+                    <li>srtcg</li>
+                    <button>Supprimer</button>
+                    <button>Fait</button>
+                    <li>srtcg</li>
+                    <button>Supprimer</button>
+                    <button>Fait</button>
+            </ul>
+        </td>
+        <td>en cours</td> 
+        <td>à faire</td>
+    </tr>
+</table>
+  
+      <script type="text/javascript" src="/to do list faite/to-do.js"></script>
+</body>
+</html>

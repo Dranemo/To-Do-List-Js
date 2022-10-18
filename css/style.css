@@ -9,8 +9,45 @@ form {
 table, th, td {
     text-align: center;
     border:1px solid black;
-    width:50%
+    width:33%
 }
+
+ul {
+    list-style-type: none;
+}
+
+table {
+    margin:auto;
+    width: 90%;
+}
+
+th {
+    font-size: larger;
+    
+}
+
+.important {
+    background-color: #e3242b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

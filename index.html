@@ -12,7 +12,7 @@
             <div class="buttonHolder">
                 <label class="tache">Entrez votre tâche ici :</label>
                 <input type="text" name="name" class="input" required>
-                <span class="button" type="submit">Ajouter</span>
+                <span class="button" type="submit" onclick="getValue();">Ajouter</span>
             </div>
         </header>
 
@@ -26,19 +26,29 @@
                   <li><a href="#">Marketing</a></li>
                 </ul>
           </nav>
+
+
         <main>
             <table>
                 <tr>
-                   <th>oui</th>
-                   <th>oi</th> 
+                   <th class="important" >Important</th>
+                   <th class="en_cours">En cours</th>
+                   <th class="a_faire">A faire</th> 
                 </tr>
                 <tr>
                     <td>
                         <ul class="list">
-                            <div class="div">
+                            <div class="tododiv">
+                                <li>srtcg</li>
+                                <button>Supprimer</button>
+                                <button>Fait</button>
+                                <li>srtcg</li>
+                                <button>Supprimer</button>
+                                <button>Fait</button>
                         </ul>
                     </td>
-                    <td>oi</td> 
+                    <td>en cours</td> 
+                    <td>à faire</td>
                 </tr>
             </table>
         </main>
