@@ -10,15 +10,16 @@
     </title>
 </head>
     <body>
-
-        <body>
-            <h1>To-do list</h1>
+        <h1>To-do list</h1>
+        <!--on entre ici la tâche que l'on veut, on appuie ensuite sur le bouton pour l'ajouter dans la liste-->
             <div class="adder">
               <input type="text" class="input" placeholder="Nouvelle tâche"/>
               <span class="add">+</span>
 
                         </br>
                         </br>
+
+                <!--choix des différentes catégories-->        
                 <div class="categorie">
                     <label for="select" class="label">Catégorie :</label>
                     <select name="pets" id="select">
@@ -27,15 +28,20 @@
                     </select>
                 </div>
             </div>
+
                     </br>
                     </br>
+
+            <!--tableau-->       
             <table id="table">
+                <!--les titres-->
                 <thead class="thead">
                     <tr class="trhead">
                         <th>Personnel</th>
                         <th>Professionnel</th>
                     </tr>
                 </thead>
+                <!--les colonnes-->
                 <tbody>
                     <tr>
                         <td id="1">
@@ -49,8 +55,6 @@
                     </tr>
                 </tbody>
             </table>
-          </body>
-        
         <script src="/js.js"></script>
     </body>
 </html>

@@ -53,12 +53,16 @@ var listItens = document.querySelectorAll('.draggable');
   addEventsDragAndDrop(item);
 });
 
+
+
+
+
+
+
+
 function addNewItem() {
   var newItem = document.querySelector('.input').value;
   var table = document.getElementById('select');
-  var fait = document.getElementsByClassName('.fait');
-  var afaire = document.getElementsByClassName('.afaire');
-  console.log(table.value);
   if (table.value == 'fait') {
     if (newItem != '') {
       document.querySelector('.input').value = '';
@@ -70,6 +74,11 @@ function addNewItem() {
       li.setAttributeNode(attr);
       li.appendChild(document.createTextNode(newItem));
       ul.appendChild(li);
+      var span = document.createElement("SPAN");
+          var txt = document.createTextNode("\u00D7");
+          span.className = "close";
+          span.appendChild(txt);
+          li.appendChild(span);
       addEventsDragAndDrop(li);
     }
   }
@@ -86,9 +95,26 @@ function addNewItem() {
       li.setAttributeNode(attr);
       li.appendChild(document.createTextNode(newItem));
       ul.appendChild(li);
+      var span = document.createElement("SPAN");
+      var txt = document.createTextNode("\u00D7");
+      span.className = "close";
+      span.appendChild(txt);
+      li.appendChild(span);
       addEventsDragAndDrop(li);
     }
   }
 }
 
+    
+
+
 btn.addEventListener('click', addNewItem);
+
+
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+  close.onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
