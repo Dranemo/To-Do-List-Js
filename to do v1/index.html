@@ -12,9 +12,21 @@
             <div class="buttonHolder">
                 <label class="tache">Entrez votre tâche ici :</label>
                 <input type="text" name="name" class="input" required>
-                <span class="button" type="submit" onclick="getValue();">Ajouter</span>
+                <span class="button" type="submit" onclick="newElement()">Ajouter</span>
             </div>
         </header>
+        <label for="pet-select">Choose a pet:</label>
+
+          <select name="pets" id="pet-select">
+              <option value="">--Please choose an option--</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="hamster">Hamster</option>
+              <option value="parrot">Parrot</option>
+              <option value="spider">Spider</option>
+              <option value="goldfish">Goldfish</option>
+          </select>
+
 
         <main>
 
@@ -33,23 +45,25 @@
                 </div>
 
                 
-            <div class="wrapper">
-                <div class="column">
-                  <h1>TODO</h1>
-                  <div class="cnt"></div>
-                  <div class="item" draggable="true">Task 1</div>
-                  <div class="item" draggable="true">Task 2</div>
-                  <div class="item" draggable="true">Task 3</div>
-                </div>
-                <div class="column">
-                  <h1>IN PROGRESS</h1>
-                  <div class="cnt"></div>
-                </div>
-                <div class="column">
-                  <h1>DONE</h1>
-                  <div class="cnt"></div>
-                </div>
-              </div>
+
+                <body>
+                  <div class="wrapper">
+                    <div class="column">
+                      <h1>TODO</h1>
+                      <div class="cnt"></div>
+                      <div class="item" draggable="true">Task 1</div>
+                      <div class="item" draggable="true">Task 2</div>
+                      <div class="item" draggable="true">Task 3</div>
+                    </div>
+                    <div class="column">
+                      <h1>IN PROGRESS</h1>
+                      <div class="cnt"></div>
+                    </div>
+                    <div class="column">
+                      <h1>DONE</h1>
+                      <div class="cnt"></div>
+                    </div>
+                  </div>
         </main>
 
     <script type="text/javascript" src="/to do v1/javascript/to do.js"></script>
