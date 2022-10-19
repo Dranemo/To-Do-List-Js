@@ -109,12 +109,15 @@ function addNewItem() {
 
 
 btn.addEventListener('click', addNewItem);
-
-
+var close = document.querySelectorAll(".close");
 
 // Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-  close.onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    // var div = this.parentElement;
+    // div.style.display = "none";
+   
   }
+}
+console.log(close);
+
