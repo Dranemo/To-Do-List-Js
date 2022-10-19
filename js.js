@@ -55,17 +55,39 @@ var listItens = document.querySelectorAll('.draggable');
 
 function addNewItem() {
   var newItem = document.querySelector('.input').value;
-  if (newItem != '') {
-    document.querySelector('.input').value = '';
-    var li = document.createElement('li');
-    var attr = document.createAttribute('draggable');
-    var ul = document.querySelector('ul');
-    li.className = 'draggable';
-    attr.value = 'true';
-    li.setAttributeNode(attr);
-    li.appendChild(document.createTextNode(newItem));
-    ul.appendChild(li);
-    addEventsDragAndDrop(li);
+  var table = document.getElementById('select');
+  var fait = document.getElementsByClassName('.fait');
+  var afaire = document.getElementsByClassName('.afaire');
+  console.log(table.value);
+  if (table.value == 'fait') {
+    if (newItem != '') {
+      document.querySelector('.input').value = '';
+      var li = document.createElement('li');
+      var attr = document.createAttribute('draggable');
+      var ul = document.getElementById('2');
+      li.className = 'draggable';
+      attr.value = 'true';
+      li.setAttributeNode(attr);
+      li.appendChild(document.createTextNode(newItem));
+      ul.appendChild(li);
+      addEventsDragAndDrop(li);
+    }
+  }
+
+
+  if (table.value == 'afaire') {
+    if (newItem != '') {
+      document.querySelector('.input').value = '';
+      var li = document.createElement('li');
+      var attr = document.createAttribute('draggable');
+      var ul = document.getElementById('1');
+      li.className = 'draggable';
+      attr.value = 'true';
+      li.setAttributeNode(attr);
+      li.appendChild(document.createTextNode(newItem));
+      ul.appendChild(li);
+      addEventsDragAndDrop(li);
+    }
   }
 }
 

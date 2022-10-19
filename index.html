@@ -5,32 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
+    <title>
+        To do list
+    </title>
 </head>
     <body>
 
         <body>
-            <h1>DRAG AND DROP HTML5</h1>
+            <h1>To-do list</h1>
             <div class="adder">
-              <input type="text" class="input" placeholder="Add items in your list"/>
+              <input type="text" class="input" placeholder="Nouvelle tâche"/>
               <span class="add">+</span>
+
+                        </br>
+                        </br>
+                <div class="categorie">
+                    <label for="select" class="label">Catégorie :</label>
+                    <select name="pets" id="select">
+                        <option value="afaire" class="afaire">Personnel</option>
+                        <option value="fait" class="fait">Professionnel</option>   
+                    </select>
+                </div>
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>The table header</th>
-                        <th>hhfht</th>
+                    </br>
+                    </br>
+            <table id="table">
+                <thead class="thead">
+                    <tr class="trhead">
+                        <th>Personnel</th>
+                        <th>Professionnel</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>
+                        <td id="1">
                             <ul>
                             </ul>
                         </td>
-                        <td>
+                        <td id="2">
                             <ul>
-                                <li draggable="true">sdsss</li>
                             </ul>
                         </td>
                     </tr>
