@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/to do v1/css/style.css">
+    <title>To Do List</title>
+</head>
+    <body class="body">
+        <header>
+            <div class="buttonHolder">
+                <label class="tache">Entrez votre tâche ici :</label>
+                <input type="text" name="name" class="input" required>
+                <span class="button" type="submit" onclick="getValue();">Ajouter</span>
+            </div>
+        </header>
+
+        <main>
+
+
+          <button type="button" class="collapsible">Open Collapsible</button> <!--collapsible 1er cat-->
+                <div class="content">
+                  <div class="wrapper">
+                    <div class="column">
+                    <h1>TODO</h1>
+                    <div class="cnt"></div>
+                    <div class="item" draggable="true">Task 1</div>
+                    <div class="item" draggable="true">Task 2</div>
+                    <div class="item" draggable="true">Task 3</div>
+                    </div>
+                  </div>
+                </div>
+
+                
+            <div class="wrapper">
+                <div class="column">
+                  <h1>TODO</h1>
+                  <div class="cnt"></div>
+                  <div class="item" draggable="true">Task 1</div>
+                  <div class="item" draggable="true">Task 2</div>
+                  <div class="item" draggable="true">Task 3</div>
+                </div>
+                <div class="column">
+                  <h1>IN PROGRESS</h1>
+                  <div class="cnt"></div>
+                </div>
+                <div class="column">
+                  <h1>DONE</h1>
+                  <div class="cnt"></div>
+                </div>
+              </div>
+        </main>
+
+    <script type="text/javascript" src="/to do v1/javascript/to do.js"></script>
+    </body>
+</html>

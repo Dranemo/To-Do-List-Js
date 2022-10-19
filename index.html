@@ -4,55 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>To Do List</title>
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
 </head>
-    <body class="body">
-        <header>
-            <div class="buttonHolder">
-                <label class="tache">Entrez votre tâche ici :</label>
-                <input type="text" name="name" id="input" required>
-                <span class="button" type="submit" onclick="getValue();">Ajouter</span>
-            </div>
-        </header>
-
-        <nav>
-            <ul>
-              <li class="menu-deroulant">
-                <a href="#">Services</a>
-                <ul class="sous-menu">
-                  <li><a href="#">Graphisme</a></li>
-                  <li><a href="#">Web & App</a></li>
-                  <li><a href="#">Marketing</a></li>
-                </ul>
-          </nav>
-
+    <body>
 
         <main>
-            <table>
-                <tr>
-                   <th class="important" >Important</th>
-                   <th class="en_cours">En cours</th>
-                   <th class="a_faire">A faire</th> 
-                </tr>
-                <tr>
-                    <td>
-                        <ul class="list">
-                            <div class="tododiv">
-                                <li>srtcg</li>
-                                <button>Supprimer</button>
-                                <button>Fait</button>
-                                <li>srtcg</li>
-                                <button>Supprimer</button>
-                                <button>Fait</button>
-                        </ul>
-                    </td>
-                    <td>en cours</td> 
-                    <td>à faire</td>
-                </tr>
-            </table>
+            <button type="button" class="collapsible">Open Collapsible</button> <!--collapsible 1er cat-->
+                <div class="content">
+                  <p>Lorem ipsum...</p>
+                </div>
         </main>
 
-    <script type="text/javascript" src="javascript/to do.js"></script>
+        <script src="/js.js"></script>
     </body>
 </html>
