@@ -95,11 +95,19 @@ function addNewItem() {
       li.setAttributeNode(attr);
       li.appendChild(document.createTextNode(newItem));
       ul.appendChild(li);
+
       var span = document.createElement("SPAN");
       var txt = document.createTextNode("\u00D7");
       span.className = "close";
       span.appendChild(txt);
       li.appendChild(span);
+
+      var check = document.createElement("SPAN");
+      var checktxt = document.createTextNode("/^[a-zA-Z]+$/")
+      check.className = "check";
+      check.appendChild(checktxt);
+      li.appendChild(check);
+
       addEventsDragAndDrop(li);
     }
   }
@@ -108,16 +116,18 @@ function addNewItem() {
     
 
 
-btn.addEventListener('click', addNewItem);
 var close = document.querySelectorAll(".close");
-
-// Click on a close button to hide the current list item
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     // var div = this.parentElement;
     // div.style.display = "none";
+    this.parentNode.remove()
+    console.log(close);
    
   }
 }
-console.log(close);
+
+btn.addEventListener('click', addNewItem);
+
+// Click on a close button to hide the current list item
 
