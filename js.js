@@ -79,6 +79,13 @@ function addNewItem() {
           span.className = "close";
           span.appendChild(txt);
           li.appendChild(span);
+
+          var check = document.createElement("SPAN");
+          var checktxt = document.createTextNode("✐")
+          check.className = "check";
+          check.appendChild(checktxt);
+          li.appendChild(check);
+          
       addEventsDragAndDrop(li);
     }
   }
@@ -103,7 +110,7 @@ function addNewItem() {
       li.appendChild(span);
 
       var check = document.createElement("SPAN");
-      var checktxt = document.createTextNode("/^[a-zA-Z]+$/")
+      var checktxt = document.createTextNode("✐")
       check.className = "check";
       check.appendChild(checktxt);
       li.appendChild(check);
