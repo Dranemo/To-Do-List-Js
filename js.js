@@ -101,7 +101,21 @@ function addNewItem() {
         }
       }
 
+      var changed = document.querySelectorAll(".change");
+      for (i = 0; i < close.length; i++) {
+        changed[i].onclick = function() {
+          var textinside = this.parentElement.firstChild
+          let changement = prompt("Please enter the changements :", textinside.textContent);
+          if (changement == null || changement == "") {
+            alert("User cancelled the prompt.");
+          } else {
+            textinside.textContent = changement
+          console.log(textinside);
+          }
+        }
+      }
     }
+      
   }
 
 
@@ -146,12 +160,13 @@ function addNewItem() {
       var changed = document.querySelectorAll(".change");
       for (i = 0; i < close.length; i++) {
         changed[i].onclick = function() {
-          var textinside = this.parentElement.firstChild.textContent
-          let changement = prompt("Please enter the changements :", textinside);
+          var textinside = this.parentElement.firstChild
+          let changement = prompt("Please enter the changements :", textinside.textContent);
           if (changement == null || changement == "") {
             alert("User cancelled the prompt.");
           } else {
-          console.log(changed);
+            textinside.textContent = changement
+          console.log(textinside);
           }
         }
       }
@@ -160,7 +175,7 @@ function addNewItem() {
   }
 }
 
-    
+
 
 
 

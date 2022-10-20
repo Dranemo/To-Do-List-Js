@@ -22,6 +22,7 @@ th {
 
 td {
   list-style-type: none;
+  background-color: rgb(229, 226, 226);
 }
 
 h1 {
@@ -31,6 +32,7 @@ h1 {
 body {
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(184, 201, 218);
 }
 
 thead {
@@ -58,6 +60,7 @@ thead {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 .input {
@@ -69,10 +72,12 @@ li {
   border: 1px white solid;
   width: auto;
   padding: 3%;
+  background-color:whitesmoke;
 }
 
 li:hover {
  background-color: lightgrey;
+ transition: 0.3s;
 }
 
 .label {
@@ -86,31 +91,37 @@ li:hover {
 .close {
   border: 1px black solid;
   background-color: lightgrey;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  float: right;
-  border-radius: 50%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  float: left;
+  font-size: 20px;
 }
+
 
 .close:hover {
-  background-color: rgb(255, 50, 50);
+  background-color: rgb(245, 115, 115);
   transition: 0.3s;
 }
 
-.check {
+.change {
   border: 1px black solid;
   background-color: lightgrey;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   float: right;
-  border-radius: 50%;
+  font-size: 17px;
 }
 
-.check:hover {
-  background-color: lightblue;
+.change:hover {
+  background-color: rgb(131, 218, 247);
   transition: 0.3s;
 }
+
+header {
+  background-color:aliceblue
+}
+
