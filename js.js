@@ -86,6 +86,7 @@ function addNewItem() {
        var changetxt = document.createTextNode("✐")
        change.className = "change";
        change.setAttribute("name", "change");
+      change.setAttribute("title", "changing");
        change.innerHTML = "✐";
        li.appendChild(change);
           
@@ -98,7 +99,8 @@ function addNewItem() {
           console.log(close);
    
         }
-}
+      }
+
     }
   }
 
@@ -126,6 +128,7 @@ function addNewItem() {
       var changetxt = document.createTextNode("✐")
       change.className = "change";
       change.setAttribute("name", "change");
+      change.setAttribute("title", "changing");
       change.innerHTML = "✐";
       li.appendChild(change);
 
@@ -138,9 +141,22 @@ function addNewItem() {
           console.log(close);
    
         }
-}
+      }
 
+      var changed = document.querySelectorAll(".change");
+      for (i = 0; i < close.length; i++) {
+        changed[i].onclick = function() {
+          var textinside = this.parentElement.firstChild.textContent
+          let changement = prompt("Please enter the changements :", textinside);
+          if (changement == null || changement == "") {
+            alert("User cancelled the prompt.");
+          } else {
+          console.log(changed);
+          }
+        }
+      }
     }
+      
   }
 }
 
