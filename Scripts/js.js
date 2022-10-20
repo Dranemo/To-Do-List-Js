@@ -1,6 +1,7 @@
 var btn = document.querySelector('.add');
 var remove = document.querySelector('.draggable');
 
+// grab and drag
 function dragStart(e) {
   this.style.opacity = '0.4';
   dragSrcEl = this;
@@ -59,10 +60,12 @@ var listItens = document.querySelectorAll('.draggable');
 
 
 
-
+// nouveau to do 
 function addNewItem() {
   var newItem = document.querySelector('.input').value;
   var table = document.getElementById('select');
+
+  // ajout catégorie pro
   if (table.value == 'fait') {
     if (newItem != '') {
       document.querySelector('.input').value = '';
@@ -75,6 +78,7 @@ function addNewItem() {
       li.appendChild(document.createTextNode(newItem));
       ul.appendChild(li);
       
+      // creation bouton supprimer
       var btn = document.createElement("button");
       var txt = document.createTextNode("\u00D7");
       btn.className = "close";
@@ -82,6 +86,7 @@ function addNewItem() {
       btn.innerHTML = "\u00D7";
       li.appendChild(btn);
 
+      // creation bouton modifier
        var change = document.createElement("button");
        var changetxt = document.createTextNode("✐")
        change.className = "change";
@@ -92,6 +97,7 @@ function addNewItem() {
           
       addEventsDragAndDrop(li);
 
+      // fonctionnement bouton supprimer
       var close = document.querySelectorAll(".close");
       for (i = 0; i < close.length; i++) {
         close[i].onclick = function() {
@@ -101,6 +107,7 @@ function addNewItem() {
         }
       }
 
+      // fonctionnement bouton modifier
       var changed = document.querySelectorAll(".change");
       for (i = 0; i < close.length; i++) {
         changed[i].onclick = function() {
@@ -118,7 +125,7 @@ function addNewItem() {
       
   }
 
-
+  // ajout catégorie perso
   if (table.value == 'afaire') {
     if (newItem != '') {
       document.querySelector('.input').value = '';
@@ -131,6 +138,7 @@ function addNewItem() {
       li.appendChild(document.createTextNode(newItem));
       ul.appendChild(li);
 
+      // creation bouton supprimer
       var btn = document.createElement("button");
       var txt = document.createTextNode("\u00D7");
       btn.className = "close";
@@ -138,6 +146,7 @@ function addNewItem() {
       btn.innerHTML = "\u00D7";
       li.appendChild(btn);
 
+      // creation bouton modifier
       var change = document.createElement("button");
       var changetxt = document.createTextNode("✐")
       change.className = "change";
@@ -148,6 +157,7 @@ function addNewItem() {
 
       addEventsDragAndDrop(li);
 
+      // fonctionnement bouton supprimer
       var close = document.querySelectorAll(".close");
       for (i = 0; i < close.length; i++) {
         close[i].onclick = function() {
@@ -157,6 +167,7 @@ function addNewItem() {
         }
       }
 
+      // fonctionnement bouton modifier
       var changed = document.querySelectorAll(".change");
       for (i = 0; i < close.length; i++) {
         changed[i].onclick = function() {
