@@ -2,11 +2,17 @@ body {
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: rgb(245, 199, 161);
+  cursor:default
 }
 
 h1 {
   font-size: 40px;
   text-shadow: 1px 1px 2px pink;
+}
+
+header {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /*tableau*/
@@ -15,13 +21,11 @@ table, th, td {
   text-align: center;
   border:1px solid black;
   width:33%;
-  cursor:default
 }
 
 table {
   margin:auto;
   width: 90%;
-  border-radius: 5px;
   border-collapse: collapse;
 }
 
@@ -58,11 +62,10 @@ li {
 li:hover {
  background-color: lightgrey;
  transition: 0.3s;
- cursor: default;
 }
 
-/*barre d'ajout de texte */
 
+/*barre d'ajout de texte */
 .input {
   padding: 1%;
   width: 50%;
@@ -70,8 +73,8 @@ li:hover {
   border: 2px black solid;
 }
 
-/*bouton add*/
 
+/*bouton add*/
 .add {
   border: 2px black solid;
   padding: 0.1%;
@@ -96,16 +99,20 @@ li:hover {
 .add:active {
   background-color: grey;
 }
-/*selection de classe*/
 
+
+/*selection de classe*/
 .label {
   font-size: 20px;
   margin-right: 10px;
+  font-weight: 500;
 }
 
 #select {
     padding: 10px;
     cursor: pointer;
+    border-radius: 5px;
+    border: 2px black solid;
 }
 
 #select:hover {
@@ -113,8 +120,8 @@ li:hover {
   transition: 0.3s;
 }
 
-/*bouton supprimer et modifier*/
 
+/*bouton supprimer*/
 .close {
   border: 1px black solid;
   background-color: lightgrey;
@@ -125,6 +132,7 @@ li:hover {
   float: left;
   font-size: 20px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 
@@ -133,16 +141,22 @@ li:hover {
   transition: 0.3s;
 }
 
+.close:active {
+  background-color: rgb(250, 57, 57);
+}
+
+/*bouton changer*/
 .change {
   border: 1px black solid;
   background-color: lightgrey;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 0.9%;
+  padding-bottom: 0.9%;
   float: right;
   font-size: 17px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .change:hover {
@@ -150,5 +164,25 @@ li:hover {
   transition: 0.3s;
 }
 
+.change:active {
+  background-color: rgb(49, 155, 255);
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 5.5rem;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  float: 10px;
+}
 
 
