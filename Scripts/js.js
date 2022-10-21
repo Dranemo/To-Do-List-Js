@@ -1,7 +1,7 @@
-var btn = document.querySelector('.add');
-var remove = document.querySelector('.draggable');
+ var btn = document.querySelector('.add');
+  var remove = document.querySelector('.draggable');
 
-// grab and drag
+            // grab and drag
 function dragStart(e) {
   this.style.opacity = '0.4';
   dragSrcEl = this;
