@@ -5,7 +5,8 @@ body {
 }
 
 h1 {
-  text-decoration: underline;
+  font-size: 40px;
+  text-shadow: 1px 1px 2px pink;
 }
 
 /*tableau*/
@@ -13,7 +14,8 @@ h1 {
 table, th, td {
   text-align: center;
   border:1px solid black;
-  width:33%
+  width:33%;
+  cursor:default
 }
 
 table {
@@ -56,38 +58,44 @@ li {
 li:hover {
  background-color: lightgrey;
  transition: 0.3s;
+ cursor: default;
 }
 
 /*barre d'ajout de texte */
 
 .input {
-padding: 1%;
-width: 50%;
+  padding: 1%;
+  width: 50%;
+  border-radius: 5px;
+  border: 2px black solid;
 }
 
 /*bouton add*/
 
 .add {
-  border: 1px black solid;
+  border: 2px black solid;
+  padding: 0.1%;
+  padding-bottom: 0.7%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: 10px;
+  background: #d9d9d9;
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 23px;
 }
 
 .add:hover {
   background-color: rgb(241, 241, 241);
 }
 
-.add {
-  padding: 1%;
-    width: 25px;
-    height: px;
-    background: #d9d9d9;
-    color: #555;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
+.add:active {
+  background-color: grey;
 }
-
 /*selection de classe*/
 
 .label {
@@ -97,6 +105,7 @@ width: 50%;
 
 #select {
     padding: 10px;
+    cursor: pointer;
 }
 
 #select:hover {
@@ -115,6 +124,7 @@ width: 50%;
   padding-bottom: 1%;
   float: left;
   font-size: 20px;
+  cursor: pointer;
 }
 
 
@@ -132,6 +142,7 @@ width: 50%;
   padding-bottom: 1%;
   float: right;
   font-size: 17px;
+  cursor: pointer;
 }
 
 .change:hover {
